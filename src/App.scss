@@ -1,0 +1,72 @@
+.app-container{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .top-bg{
+    background: #27303f;
+    width: 100%;
+    height: 309px;
+    position: absolute;
+    z-index: -1;
+  }
+  .container{
+    width: 60%;
+    margin: 0 auto;
+    
+  }
+  
+}
+.page-container{
+  position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    background: #fff;
+    padding-top: 65px;
+    padding-bottom: 85px;
+    min-height: 550px;
+    transition: 0.4s ease all;
+    overflow: hidden;
+    
+    
+}
+.page-icon{
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  color: #475569;
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// page transition css
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+$primary:#27303f;
+$text-color:#475569;

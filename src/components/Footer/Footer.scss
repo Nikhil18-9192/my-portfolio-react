@@ -1,0 +1,48 @@
+@import "../../App.scss";
+.footer-container{
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background: $primary;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    padding: 48px 0;
+    flex-direction: column;
+
+    .menu{
+        a{
+            color : #64748b;
+            text-decoration: none;
+            font-size: 16px;
+            background: transparent;
+            padding: 8px 12px;
+            margin-right: 16px;
+            border-radius: 4px;
+            transition: 0.4s ease all;
+            &:hover{
+                color: $text-color;
+            }
+            
+        }
+    }
+    .social-icons{
+        display: flex;
+        margin: 32px 0;
+        a{
+            text-decoration: none;
+            color: #9fa6b2;
+            font-size: 24px;
+            margin-left: 16px;
+        }
+    }
+
+    .footer-text{
+        text-align: center;
+        p{
+            color:#9fa6b2;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+    }
+}
