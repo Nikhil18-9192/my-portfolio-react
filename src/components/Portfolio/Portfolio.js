@@ -8,6 +8,8 @@ import barai from "../../Static/Images/barai.png";
 import chetan from "../../Static/Images/cachetan.png";
 import dental from "../../Static/Images/dental.png";
 import malati from "../../Static/Images/malati.png";
+import bookmyshow from "../../Static/Images/bookmyshow.png"
+import cgUni from "../../Static/Images/university.png";
 
 function Portfolio() {
   const works = [
@@ -15,6 +17,11 @@ function Portfolio() {
       image: cg,
       desc: "CleverGround LMS is designed and curated to suit the digital needs of modern colleges and university. Bringing the exact combination of automated teaching and learning experience.",
       link: "https://product.cleverground.com/",
+    },
+    {
+      image: cgUni,
+      desc: "CleverGround Accreditation App Provides class-leading analytics for colleges and universities leading to end-to-end automation of NAAC Accreditation.",
+      link: "https://university.cleverground.com/",
     },
     {
       image: netaji,
@@ -46,6 +53,11 @@ function Portfolio() {
       desc: "Malati Autocast Pvt. Ltd. is the newest addition to the Malati Group and lives up to the 50 year heritage symbolizing Quality and Trust.",
       link: "https://malatiautocast.com/",
     },
+    {
+      image: bookmyshow,
+      desc: "BookMyShow is an online movie ticketing platform that allows users to book tickets for upcoming movies.",
+      link: "https://react-book-my-show-app.netlify.app/"
+    }
   ];
   return (
     <div className="page-container">
