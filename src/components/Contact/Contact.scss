@@ -2,6 +2,10 @@
 .contact-info{
     width: 40%;
     margin: 60px auto 0 auto;
+    @include for-phone-only{
+        width: 85%;
+        margin-top: 30px;
+    }
     h3{
         font-size: 24px;
         color: $text-color;

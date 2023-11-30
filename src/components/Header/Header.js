@@ -2,6 +2,8 @@ import React from "react";
 import "./Header.scss";
 import profile from "../../Static/Images/profile_deepak.jpeg";
 import { NavLink, useLocation } from "react-router-dom";
+import Phonetoolbar from "../Phonetoolbar/Phonetoolbar";
+
 
 function Header() {
   const location = useLocation();
@@ -13,6 +15,7 @@ function Header() {
     { name: "Technologies", link: "/technologies" },
     { name: "Contact", link: "/contact" },
   ];
+
   return (
     <div className="header-container">
       <div className="upper-container">
@@ -31,11 +34,13 @@ function Header() {
           ))}
         </div>
         <div className="resume-btn">
-          <NavLink to="https://docs.google.com/document/d/1O3_V0ckxxlOcKpWDnX5I9DjWv78ZxsjnR6PsIl1Wz3I/edit" target="_blank">
+          <NavLink to="https://drive.google.com/file/d/1cMomvyvLLSrDDm6cbffad4jgZX7nnYb3/view?usp=sharing" target="_blank">
             Download Resume
           </NavLink>
         </div>
+        
       </div>
+      <Phonetoolbar /> 
       <div className="title-text">
         <h1>
           Deepak Korane |{" "}

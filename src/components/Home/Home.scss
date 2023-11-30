@@ -15,10 +15,19 @@
     .profile-info{
         width: 60%;
         margin: 0 auto;
+        @include for-phone-only{
+            width: 85%;
+        }
+        @include for-tablet-only{
+            width: 85%;
+        }
         h3{
             font-size: 24px;
             font-weight: 700;
             color: $text-color;
+            @include for-phone-only{
+                font-size: 22px;
+            }
             
         }
         p{
@@ -27,6 +36,9 @@
             font-size: 16px;
             line-height: 1.5;
             margin-top: 24px;
+            @include for-phone-only{
+                margin-top: 18px;
+            }
         }
     }
 }

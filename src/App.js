@@ -8,16 +8,30 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Technologies from "./components/Technologies/Technologies";
 import Contact from "./components/Contact/Contact";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Phonenav from "./components/Phonenav/Phonenav";
+import { useContext } from "react";
+import GlobalContext from "./components/Context/Creactecontext";
 
 function App() {
   const location = useLocation();
-
+  const {state}= useContext(GlobalContext)
+  
   return (
     <div className="app-container">
       <div className="top-bg"></div>
       <div className="container">
         <Header />
-       
+        {state.toggle ? 
+         <CSSTransition
+         in={true}
+         timeout={300} // Duration of the transition in milliseconds
+         classNames="phone-navbar"
+         unmountOnExit
+       >
+        <Phonenav />
+        </CSSTransition>
+        : null}
+      
         <TransitionGroup>
           <CSSTransition
             key={location.pathname}

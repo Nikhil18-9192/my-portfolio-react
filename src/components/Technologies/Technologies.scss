@@ -7,9 +7,15 @@
         background: $primary;
         padding: 1rem 2rem;
         margin: 24px auto 0 auto;
+        @include for-phone-only{
+            padding: .5rem 1rem;
+        }
       
         .task-progress {
           margin: 2.5rem 0;
+          @include for-phone-only{
+            margin: 1.5rem 0;
+          }
 
            p {
             display: flex;
