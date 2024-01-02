@@ -18,7 +18,7 @@ function Contact() {
         <div className="item">
           <GrMail/>
           <a href="mailto:nikhilkorane08@gmail.com"
-          > <span>nikhilkorane08@gmail.com</span></a>
+          > <span>deepakkorane18@gmail.com</span></a>
         </div>
         <div className="item">
           <BsFillPhoneFill/>

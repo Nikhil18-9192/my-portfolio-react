@@ -34,7 +34,7 @@ function Header() {
           ))}
         </div>
         <div className="resume-btn">
-          <NavLink to="https://drive.google.com/file/d/1cMomvyvLLSrDDm6cbffad4jgZX7nnYb3/view?usp=sharing" target="_blank">
+          <NavLink to="https://drive.google.com/file/d/1fYGV8Vfn1TcQNseS4rWWQSdoVCHFYH2n/view?usp=drive_link" target="_blank">
             Download Resume
           </NavLink>
         </div>
